@@ -11,9 +11,10 @@ import com.merc.demo.models.Employee;
 public class AnnotApp {
 
 	public static void main(String[] args) {
-
+ 
 		ApplicationContext context = new AnnotationConfigApplicationContext(AnnotApp.class);
 		Employee emp = context.getBean(Employee.class);
+		emp.setEid(101);
 		System.out.println(emp.toString());
 
 		((AbstractApplicationContext) context).close();
