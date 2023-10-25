@@ -7,5 +7,4 @@
 	<bean id="emp" class="com.merc.demo.models.Employee">
 	</bean>
 
-
 </beans>
