@@ -25,8 +25,8 @@ public class App {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
 
-		Employee emp0 = new Employee(101, "Sonu", 90000d);
-		Employee emp = context.getBean(Employee.class);
+//		Employee emp0 = new Employee(101, "Sonu", 90000d);
+		Employee emp = context.getBean("empBean", Employee.class);
 		System.out.println(emp.toString());
 //		Employee emp2 = context.getBean(Employee.class);
 //		System.out.println(emp2.toString());
@@ -44,9 +44,16 @@ public class App {
 }
 
 // bean == object == instance 
+
 // spring config - 3 types 
 
 // XML configuration - 
-
 //Sample - 
 //https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/xsd-configuration.html
+// Java based configuration 
+// code 
+// Annotation based configuration 
+// example 
+
+
+

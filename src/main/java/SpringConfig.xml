@@ -5,12 +5,32 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!-- Setter injection / property injection -->
-	<!-- <bean id="emp" class="com.merc.demo.models.Employee"> <property name="eid"> 
-		<value>101</value> </property> <property name="firstName"> <value>Sonu</value> 
-		</property> <property name="salary"> <value>90000</value> </property> </bean> -->
+	<bean id="empBean" class="com.merc.demo.models.Employee">
+		<property name="eid">
+			<value>101</value>
+		</property>
+		<property name="firstName">
+			<value>Sonu</value>
+		</property>
+		<property name="salary">
+			<value>90000</value>
+		</property>
+	</bean>
+
+	<bean id="empBean2" class="com.merc.demo.models.Employee">
+		<property name="eid">
+			<value>101</value>
+		</property>
+		<property name="firstName">
+			<value>Sonu</value>
+		</property>
+		<property name="salary">
+			<value>90000</value>
+		</property>
+	</bean>
 
 	<!-- Constructor injection -->
-	<bean id="emp" class="com.merc.demo.models.Employee">
+	<bean id="empBean3" class="com.merc.demo.models.Employee">
 		<constructor-arg value="101" type="java.lang.Integer"></constructor-arg>
 		<constructor-arg value="Sonu" type="java.lang.String"></constructor-arg>
 		<constructor-arg value="90000" type="java.lang.Double"></constructor-arg>
