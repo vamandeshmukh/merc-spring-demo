@@ -22,7 +22,7 @@ public class App {
 //		Employee emp2 = new Employee(101, "Sonu", 90000d);
 //		System.out.println(emp2.toString());
 
-		ApplicationContext context = new ClassPathXmlApplicationContext();
+		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
 
 		Employee emp = context.getBean(Employee.class);
 
@@ -36,6 +36,10 @@ public class App {
 // bean == object == instance 
 // spring config - 3 types 
 
+// XML configuration - 
+
+//Sample - 
+//https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/xsd-configuration.html
 
 
 
