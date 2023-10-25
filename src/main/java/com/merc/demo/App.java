@@ -15,10 +15,31 @@ public class App {
 		System.out.println("Start");
 
 		Employee emp = new Employee(101, "Sonu", 90000d);
-
 		System.out.println(emp.toString());
+		Employee emp2 = new Employee(101, "Sonu", 90000d);
+		System.out.println(emp2.toString());
+		System.out.println(emp.hashCode());
+		System.out.println(emp2.hashCode());
 
 		System.out.println("End");
 
 	}
 }
+
+// bean == object == instance 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
