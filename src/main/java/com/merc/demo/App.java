@@ -1,5 +1,8 @@
 package com.merc.demo;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import com.merc.demo.models.Employee;
 
 /**
@@ -14,12 +17,16 @@ public class App {
 
 		System.out.println("Start");
 
-		Employee emp = new Employee(101, "Sonu", 90000d);
+//		Employee emp = new Employee(101, "Sonu", 90000d);
+//		System.out.println(emp.toString());
+//		Employee emp2 = new Employee(101, "Sonu", 90000d);
+//		System.out.println(emp2.toString());
+
+		ApplicationContext context = new ClassPathXmlApplicationContext();
+
+		Employee emp = context.getBean(Employee.class);
+
 		System.out.println(emp.toString());
-		Employee emp2 = new Employee(101, "Sonu", 90000d);
-		System.out.println(emp2.toString());
-		System.out.println(emp.hashCode());
-		System.out.println(emp2.hashCode());
 
 		System.out.println("End");
 
@@ -27,13 +34,7 @@ public class App {
 }
 
 // bean == object == instance 
-
-
-
-
-
-
-
+// spring config - 3 types 
 
 
 
